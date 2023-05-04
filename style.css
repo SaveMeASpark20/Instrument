@@ -1,0 +1,184 @@
+@font-face {
+    font-family: whyte-book;
+    src: url(assets/Whyte-Book.ttf);
+}
+@font-face {
+    font-family: monument-grotesk-mono;
+    src: url(assets/MonumentGrotesk-Mono.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: white;
+    background-color: black;
+    font-family: "whyte-book", sans-serif, 'Times New Roman', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    
+}
+
+h1{
+    font-size: 11rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 6rem;
+    line-height: 1.2;
+}
+
+h3{
+    font-size: 5.5rem;
+    line-height: 1.4;
+}
+h4{
+    font-size: 3rem;
+    margin: 20px 0 ;
+}
+
+p{
+    line-height:1.5;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+button{
+    transition: opacity .2s 
+        ease-in-out, background .4s
+        ease-in-out, color .4s 
+        ease-in-out;
+    font-family: Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+    letter-spacing: .8px;
+    line-height: 1.71;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 27px;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1.4rem;
+    height: 54px;
+    padding: 0 32px;
+    border: none;
+}
+
+button:hover{
+    opacity: .6;
+}
+
+a{
+    font-family: 'monument-grotesk-mono', Courier, monospace;
+    font-size: 1.7rem;
+    padding: 0 10px;
+    word-spacing: 6px;
+    letter-spacing: 1.3px;
+}
+
+
+nav{
+    margin: 50px  50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.8rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 65px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+main {
+    padding: 300px 50px 0 50px;
+}
+
+.video-section,
+.picture-section,
+.picture-description-row,
+.explore-more, 
+.collaboration-section,
+.get-in-touch {
+    padding: 140px 50px; 
+}
+
+.video-section video {
+    width: 100%;
+}
+
+.picture-section{
+    display: flex;
+    justify-content: center;
+}
+
+.picture-section h2{
+    width: 55%;
+    text-align: center;
+    
+}
+
+.picture-description-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.picture-description-row div {
+    margin-left: 120px;
+}
+
+.picture-description-row img {
+    margin: 50px 0;
+}
+
+.explore-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore-more h3 {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.collaboration-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-in-touch h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.small-paragraph {
+    font-size: 1.6rem;
+}
